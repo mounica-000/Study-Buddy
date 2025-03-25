@@ -1,4 +1,4 @@
-\c studybuddy
+\c thestudybuddy
 
 -- use this to clear any existing tables to reinsert fresh data
 -- you'll need to add a DROP TABLE for every table you add
