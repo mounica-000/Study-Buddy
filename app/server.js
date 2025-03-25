@@ -535,7 +535,7 @@ app.patch("/friends/accept", authorize, (req, res) => {
 
   pool.query(`SELECT user_id FROM users WHERE username = $1`, [body.friend_username])
   .then(result => {
-    console.log(result.rows);
+    console.log("Result:", result.rows);
     if (result.rows.length == 0) {
       res.status(404).json({error: 'user does not exist'});
 
